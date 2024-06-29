@@ -27,10 +27,6 @@ next();
     res.status(403).send({msg: "Unauthorized"});
 }
 };
-app.get('/', (req, res) => {
-    res.send('Welcome to my music application');
-});
-
 
 app.use("/api/auth",authRoutes);
 app.use("/api/user",authAllApi,userRouter);
