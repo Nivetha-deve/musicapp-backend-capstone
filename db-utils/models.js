@@ -36,10 +36,4 @@ const userSchema = new Schema({
 
     const User = mongoose.model("User",userSchema);  
 
-    const playlistSchema = new mongoose.Schema({
-        name: { type: String, required: true },
-        userId: { type: String, required: true }, // Assuming userId for simplicity
-        songs: [{ type: Object }], // Store song details here
-      });
-      const Playlist = mongoose.model('Playlist', playlistSchema);
-    export { User , Playlist };
+    export { User };
